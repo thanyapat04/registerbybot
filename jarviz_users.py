@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 # STEP 1: โหลดข้อมูล Excel
-df = pd.read_excel("/Users/meuy/Documents/Intern/jarviz_test.xlsx", dtype={'phone': str})
+df = pd.read_excel("/Users/Documents/jarviz_test.xlsx", dtype={'phone': str})  # Your file path
 
 # STEP 2: เตรียม Selenium
 chrome_options = Options()
@@ -20,9 +20,9 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 driver.get("https://jarvizweb.jarvizapp.com/login")
 time.sleep(1)
 
-driver.find_element(By.ID, "input-19").send_keys("NTTP")         # Company Code
-driver.find_element(By.ID, "input-22").send_keys("Thanyapat")    # UserID
-driver.find_element(By.ID, "input-25").send_keys("cst6opxk")     # Password
+driver.find_element(By.ID, "input-19").send_keys("Company_Code")      # Your Company Code
+driver.find_element(By.ID, "input-22").send_keys("UserID")            # Your UserID
+driver.find_element(By.ID, "input-25").send_keys("Password")          # Your Password
 driver.find_element(By.XPATH, "//span[text()='Login']").click()
 time.sleep(3)
 
