@@ -17,7 +17,7 @@ service = Service("/opt/homebrew/bin/chromedriver")  # path
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # STEP 3: Login
-driver.get("https://jarvizweb.jarvizapp.com/login")
+driver.get("https://jarvizweb.jarvizapp.com/login")  # Web Link
 time.sleep(1)
 
 driver.find_element(By.ID, "input-19").send_keys("Company_Code")      # Your Company Code
