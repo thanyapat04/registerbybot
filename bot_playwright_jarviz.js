@@ -3,7 +3,7 @@ const XLSX = require('xlsx');
 
 (async () => {
   // STEP 1: อ่านข้อมูล Excel
-  const workbook = XLSX.readFile('/Users/meuy/Documents/Intern/jarviz_test.xlsx');
+  const workbook = XLSX.readFile('/Users/Documents/jarviz_test.xlsx');  // Excel path
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
   const data = XLSX.utils.sheet_to_json(sheet);
 
@@ -13,10 +13,10 @@ const XLSX = require('xlsx');
   const page = await context.newPage();
 
   // STEP 3: Login
-  await page.goto('https://jarvizweb.jarvizapp.com/login');
-  await page.fill('#input-19', 'NTTP');
-  await page.fill('#input-22', 'Thanyapat');
-  await page.fill('#input-25', 'cst6opxk');
+  await page.goto('https://jarvizweb.jarvizapp.com/login');  // Web link
+  await page.fill('#input-19', 'Company_Code');  // Your Company Code
+  await page.fill('#input-22', 'UserID');  // Your UserID
+  await page.fill('#input-25', 'Password');  // Your Passwword
   await page.click('text=Login');
   await page.waitForTimeout(3000);
 
