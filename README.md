@@ -1,6 +1,6 @@
 # Register Employee Bot 
 
-บอทสำหรับเพิ่มพนักงานใหม่ (New Employee) บนเว็บไซต์ [https://jarvizweb.jarvizapp.com](https://jarvizweb.jarvizapp.com)  
+บอทสำหรับเพิ่มพนักงาน บนเว็บไซต์ [https://jarvizweb.jarvizapp.com](https://jarvizweb.jarvizapp.com)  
 โดยใช้ข้อมูลจากไฟล์ Excel 
 
 1. **Selenium + Excel** : `bot_selenium_jarviz.js`
