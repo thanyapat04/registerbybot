@@ -6,8 +6,8 @@
 1. **Selenium + Excel** : `bot_selenium_jarviz.js`
 2. **Playwright + Excel** (รันแบบ back-end, headless) : `bot_playwright_jarviz.js`
 > ตัวอย่างการรันบอทด้วย Playwright:
-```bash
-node jarviz_bot.js
+>```bash
+> node jarviz_bot.js
 
 ---
 
