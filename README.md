@@ -11,6 +11,7 @@
 
 ---
 
+
 ## Feature
 
 - อ่านข้อมูลพนักงานจากไฟล์ `.xlsx`
@@ -20,12 +21,14 @@
 - เพิ่มพนักงานทีละคน
 - กดปุ่ม OK หากมี alert แจ้ง "Add successfully"
 
+
 ## ตัวอย่างไฟล์ jarviz_test.xlsx
 
 | emp_id | full_name   | email              | position     | phone      |
 |--------|-------------|--------------------|--------------|------------|
 | 10001  | John Smith  | john@example.com   | Developer    | 0812345678 |
 | 10002  | Jane Doe    | jane@example.com   | UX Designer  | 0899999999 |
+
 
 
 ## ข้อมูลที่ต้องแก้ไข
