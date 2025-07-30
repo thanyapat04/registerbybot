@@ -42,7 +42,14 @@ const XLSX = require('xlsx');
     await page.fill('#inputphoneno', String(emp.phone));  // Phone no
     await page.fill('#inputuID', String(emp.emp_id));  // UserID
 
-    await page.click('button:has-text("Add")');
+    const [dialog] = await Promise.all([
+    page.waitForEvent('dialog'),
+    page.click('button:has-text("Add")')
+  ]);
+
+  console.log('Alert:', dialog.message());
+  await dialog.accept()
+  }
 
     await page.waitForTimeout(1000);
   }
