@@ -8,6 +8,8 @@
 > ตัวอย่างการรันบอทด้วย Playwright
 > ```bash node bot_playwright_jarviz.js
 
+---
+
 ## Feature
 
 - อ่านข้อมูลพนักงานจากไฟล์ `.xlsx`
@@ -16,8 +18,6 @@
 - เข้าหน้า User Management
 - เพิ่มพนักงานทีละคน
 - กดปุ่ม OK หากมี alert แจ้ง "Add successfully"
-
----
 
 ## ตัวอย่างไฟล์ jarviz_test.xlsx
 
@@ -28,7 +28,8 @@
 
 
 ## ข้อมูลที่ต้องแก้ไข
-หน้า Log in
+### หน้า Excel path
+### หน้า Log in
 - Company Code
 - UserID
 - Password
