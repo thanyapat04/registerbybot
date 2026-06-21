@@ -73,7 +73,6 @@ node bot_playwright_jarviz.js
 * Create employee accounts one by one
 * Automatically click the **OK** button when the success message ("Add successfully") appears
 
----
 
 ## Sample Excel File (`jarviz_test.xlsx`)
 
@@ -82,7 +81,6 @@ node bot_playwright_jarviz.js
 | 10001  | John Smith | [john@example.com](mailto:john@example.com) | Developer   | 0812345678 |
 | 10002  | Jane Doe   | [jane@example.com](mailto:jane@example.com) | UX Designer | 0899999999 |
 
----
 
 ## Required Configuration
 
@@ -98,7 +96,6 @@ Before running the bot, update the following settings in the script:
 * User ID
 * Password
 
----
 
 ## Prerequisites
 
@@ -120,7 +117,6 @@ For Playwright version:
 npm install playwright xlsx
 ```
 
----
 
 ## How It Works
 
@@ -133,7 +129,6 @@ npm install playwright xlsx
 7. Click **OK** and continue with the next employee.
 8. Repeat until all records have been processed.
 
----
 
 ## Notes
 
@@ -142,7 +137,6 @@ npm install playwright xlsx
 * The Playwright version can run in headless mode, making it suitable for server-side automation and scheduled jobs.
 * It is recommended to test with a small dataset before processing a large number of employee records.
 
----
 
 ## Disclaimer
 
