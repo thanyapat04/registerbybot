@@ -9,7 +9,6 @@
 >```bash
 > node bot_playwright_jarviz.js
 
----
 
 
 ## Feature
@@ -38,7 +37,7 @@
 - UserID
 - Password
 
--------------------------------------------------------------------------------
+---
 
 # Register Employee Bot
 
@@ -61,8 +60,6 @@ The bot reads employee information from an Excel file and automatically creates 
 ```bash
 node bot_playwright_jarviz.js
 ```
-
----
 
 ## Features
 
